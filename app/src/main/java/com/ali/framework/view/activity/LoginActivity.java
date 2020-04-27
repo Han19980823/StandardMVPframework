@@ -25,6 +25,7 @@ import butterknife.OnClick;
  * 2、必须在 {@link #providePresenter()} 方法中返回对应的 Presenter 对象
  * 3、在{@link #initData()}中联网请求
  * 4、在重写的成功、失败方法中，更新UI
+ * 5.韩鹏飞
  */
 public class LoginActivity extends BaseActivity<LoginPresenter> implements ILoginContract.IView {
 
