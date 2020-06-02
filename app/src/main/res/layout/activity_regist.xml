@@ -1,9 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.ali.framework.view.activity.RegistActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal"
+        android:layout_height="88px">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/iconprevious"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="35px"
+            android:layout_height="30px"/>
+        <TextView
+            android:layout_width="64px"
+            android:text="返回"
+            android:layout_marginTop="21px"
+            android:textSize="28px"
+            android:layout_marginLeft="10px"
+            android:layout_height="35px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="注册"
+            android:textStyle="bold"
+            android:layout_marginLeft="500px"
+            android:textSize="36px"
+
+            android:layout_marginTop="20px"
+            android:layout_height="43px"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:layout_width="980px"
+        android:layout_marginLeft="267px"
+        android:layout_marginTop="62px"
+        android:orientation="horizontal"
+        android:layout_height="120px">
+        <TextView
+            android:layout_width="113px"
+            android:text="手机号*"
+
+            android:layout_marginTop="16px"
+            android:textSize="32px"
+            android:layout_height="45px"/>
+        <EditText
+            android:id="@+id/edText_phone"
+            android:layout_width="850px"
+            android:layout_height="120px"
+            android:layout_marginLeft="16px"
+            android:singleLine="true"
+            android:layout_marginTop="15px"
+            android:hint="请输入手机号"
+            android:textSize="32px" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="980px"
+        android:layout_marginLeft="300px"
+        android:layout_marginTop="64px"
+        android:orientation="horizontal"
+        android:layout_height="120px">
+        <TextView
+            android:layout_width="113px"
+            android:text="密码*"
+            android:layout_marginTop="16px"
+            android:textSize="32px"
+            android:layout_height="45px"/>
+        <EditText
+            android:id="@+id/edText_password"
+            android:layout_width="850px"
+            android:layout_height="120px"
+            android:layout_marginLeft="-12px"
+            android:singleLine="true"
+            android:layout_marginTop="15px"
+            android:hint="请输入密码"
+            android:textSize="32px" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="980px"
+        android:layout_marginLeft="252px"
+        android:layout_marginTop="64px"
+        android:orientation="horizontal"
+        android:layout_height="120px">
+        <TextView
+            android:layout_width="160px"
+            android:text="确认密码*"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="16px"
+            android:textSize="32px"
+            android:layout_height="45px"/>
+        <EditText
+            android:id="@+id/sure_password"
+            android:layout_width="870px"
+            android:layout_height="120px"
+            android:layout_marginLeft="-10px"
+            android:singleLine="true"
+            android:layout_marginTop="15px"
+            android:hint="请再次输入密码"
+            android:textSize="32px" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="72px"
+        android:orientation="horizontal"
+        android:layout_height="120px">
+        <EditText
+            android:layout_width="525px"
+            android:layout_height="120px"
+            android:singleLine="true"
+            android:layout_marginLeft="400px"
+            android:hint="请输入图中的校验码"
+            android:textSize="32px" />
+            <!--这里预留一个ImageView来放图形验证码-->
+            <ImageView
+                android:id="@+id/identifyingcode_image"
+                android:layout_width="250px"
+                android:layout_height="93px"
+                android:layout_marginTop="25px"
+                android:layout_gravity="right"
+                />
+        <ImageView
+            android:id="@+id/btn_rev"
+            android:layout_width="41px"
+            android:src="@mipmap/iconrev"
+            android:layout_marginLeft="39px"
+            android:layout_marginTop="45px"
+            android:layout_height="41px"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="72px"
+        android:orientation="horizontal"
+        android:layout_height="120px">
+        <EditText
+            android:layout_width="525px"
+            android:layout_height="120px"
+            android:singleLine="true"
+            android:layout_marginLeft="400px"
+            android:hint="请输入验证码"
+            android:textSize="32px" />
+        <Button
+            android:layout_width="303px"
+            android:layout_height="77px"
+            android:background="@drawable/round_corner_line_radius_5dp"
+            android:text="验证码"
+            android:layout_marginTop="-10px"
+            android:id="@+id/button_login"
+            android:textColor="#7EFFFFFF"
+            android:textSize="32px" />
+
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

@@ -27,14 +27,14 @@ public interface ILoginContract {
      * presenter层   命名必须是IPresenter
      */
     interface IPresenter {
-        void login(Map<String, Object> paramsMap);
+        void login(String inputname,String username,String password);
     }
 
     /**
      * model层   命名必须是IModel
      */
     interface IModel {
-        void login(Map<String, Object> paramsMap, IModelCallback callback);
+        void login(String inputname,String username,String password, IModelCallback callback);
 
         /**
          * model层中的接口回调

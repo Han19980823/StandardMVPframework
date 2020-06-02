@@ -1,14 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".view.activity.LoginActivity">
 
-    <Button
-        android:text="一键登录"
-        android:id="@+id/btn_login"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_centerInParent="true" />
-</RelativeLayout>
+    <TextView
+        android:layout_width="342px"
+        android:layout_height="84px"
+        android:layout_marginLeft="527px"
+        android:layout_marginTop="298px"
+        android:layout_marginRight="535px"
+        android:text="Ecom易题库"
+        android:textSize="60px"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="273px"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="236px"
+            android:layout_marginTop="12px">
+
+            <ImageView
+                android:layout_width="34px"
+                android:layout_height="54px"
+                android:layout_marginLeft="8px"
+                android:layout_marginTop="-10px"
+                android:layout_marginRight="8px"
+                android:layout_marginBottom="3px"
+                android:src="@mipmap/icontablet" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <EditText
+            android:id="@+id/edText_phone"
+            android:layout_width="867px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26px"
+            android:singleLine="true"
+            android:layout_marginTop="-38px"
+            android:hint="请输入手机号"
+            android:textSize="32px" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88px"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="236px"
+            android:layout_marginTop="12px">
+
+            <ImageView
+                android:layout_width="34px"
+                android:layout_height="54px"
+                android:layout_marginLeft="8px"
+                android:layout_marginTop="-10px"
+                android:layout_marginRight="8px"
+                android:layout_marginBottom="3px"
+                android:src="@mipmap/icolock" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <EditText
+            android:id="@+id/edText_password"
+            android:layout_width="867px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26px"
+            android:layout_marginTop="-38px"
+            android:hint="请输入密码"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="32px" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="870px"
+        android:layout_height="45px"
+        android:layout_marginLeft="255px"
+
+        android:layout_marginTop="62px"
+        android:text="点击登录即表示您同意《用户服务协议》和《用户隐私协议》"
+        android:textSize="32px" />
+
+    <LinearLayout
+        android:layout_width="787px"
+        android:layout_height="100px"
+        android:layout_marginLeft="310px"
+        android:layout_marginTop="260px">
+
+        <Button
+            android:layout_width="787px"
+            android:layout_height="100px"
+            android:background="@drawable/round_corner_line_radius_5dp"
+            android:text="登录"
+            android:id="@+id/button_login"
+            android:textColor="#CCCACA"
+            android:textSize="33px" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42px"
+        android:orientation="horizontal"
+        android:layout_marginTop="62px">
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="296px"
+            android:layout_height="42px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="忘记密码？"
+                android:textSize="30px"
+                android:layout_height="42px"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="296px"
+            android:layout_height="42px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="还没有账号？"
+                android:textSize="30px"
+                android:layout_height="42px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="立即注册"
+                android:textSize="30px"
+                android:id="@+id/registered"
+                android:layout_height="42px"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="123px"
+        android:background="#2C2C2C"
+        android:layout_marginLeft="921px"
+        android:layout_height="3px"/>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

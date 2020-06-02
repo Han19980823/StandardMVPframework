@@ -1,5 +1,6 @@
 package com.ali.framework.model;
 
+import com.ali.framework.app.Constant;
 import com.ali.framework.contract.ILoginContract;
 import com.ali.framework.model.bean.LoginBean;
 import com.ali.framework.utils.CommonObserver;
@@ -21,10 +22,12 @@ import java.util.Map;
  * 3、使用 {@link CommonObserver} 代替 {@link io.reactivex.Observer} ,避免每次强制重写 onSubscribe() 和 onComplete()
  */
 public class LoginModel implements ILoginContract.IModel {
+
+
     @Override
-    public void login(Map<String, Object> paramsMap, final IModelCallback callback) {
+    public void login(String inputname, String username, String password, final IModelCallback callback) {
         RetrofitManager.getInstance().create()
-                .login(paramsMap)
+                .login("Basic U1NPOjQ2ZmQ1NGVhMjQwMWQyN2U5ZGE4YzcwZjc4YjcwZjI4",inputname,username,password)
                 .compose(CommonSchedulers.<LoginBean>io2main())
                 .subscribe(new CommonObserver<LoginBean>() {
                     @Override

@@ -3,11 +3,23 @@ package com.ali.framework.view.activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MemberActivity extends AppCompatActivity {
+import com.ali.framework.R;
+import com.ali.framework.base.BaseActivity;
+import com.ali.framework.base.BasePresenter;
+
+/**
+ * 我的会员
+ */
+public class MemberActivity extends BaseActivity {
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_member);
+    protected BasePresenter providePresenter() {
+        return null;
+    }
+
+    @Override
+    protected int provideLayoutId() {
+        return R.layout.activity_member;
     }
 }

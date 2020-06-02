@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="1404px"
+        android:layout_marginTop="15px"
+        android:layout_height="88px">
+
+        <TextView
+            android:layout_width="130px"
+            android:layout_height="45px"
+            android:layout_marginLeft="650px"
+            android:layout_marginTop="26px"
+            android:text="易题库"
+            android:textSize="36px"
+            android:textStyle="bold" />
+    </android.support.v7.widget.LinearLayoutCompat>
 
 </LinearLayout>

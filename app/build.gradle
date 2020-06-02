@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.ali.shcema"
-        minSdkVersion 15
+        minSdkVersion 27
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -16,6 +16,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 configurations.all {
     resolutionStrategy.eachDependency { DependencyResolveDetails details ->
@@ -26,6 +30,8 @@ configurations.all {
             }
         }
     }
+
+
 }
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -34,35 +40,29 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
     //Butterknife依赖
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-
     //Gson
     implementation 'com.google.code.gson:gson:2.4'
-
     //okhttp
     implementation 'com.squareup.okhttp3:okhttp:3.9.0'
-
     //日志拦截器
     implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
-
     //配置retrofit2.0
     implementation 'com.squareup.retrofit2:retrofit:+'
     //让retrofit2.0 支持Gson解析
     implementation 'com.squareup.retrofit2:converter-gson:+'
-
     //Rxjava2需要依赖
     implementation 'io.reactivex.rxjava2:rxjava:+'
     implementation 'io.reactivex.rxjava2:rxandroid:+'
-
     //让retrofit支持Rxjava2
     implementation 'com.squareup.retrofit2:adapter-rxjava2:+'
-
     //greenDao需要
     implementation 'org.greenrobot:greendao:3.2.2' // add library
-
     //xrecyclerView需要
     implementation 'com.jcodecraeer:xrecyclerview:1.5.9'
+    //今日头条
+    implementation 'me.jessyan:autosize:1.2.1'
+    implementation 'com.yinglan.alphatabs:library:1.0.5'
 }
